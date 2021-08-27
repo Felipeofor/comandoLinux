@@ -98,6 +98,8 @@ sudo apt-get install yarn -y
 Manual
 https://medium.com/@shivam1/make-your-terminal-beautiful-and-fast-with-zsh-shell-and-powerlevel10k-6484461c6efb
 
+***** Cambiar la estetica de la terminal y agregar componentes extras:
+
 sudo apt install zsh
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -106,10 +108,14 @@ https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraMono/Regul
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
+**** sudo nano ~/.zshrc
+
 ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_MODE="nerdfont-complete"
 ENABLE_CORRECTION="true"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+**** Fuente para copiar en el json de la configuracion de la terminal:
 
 "fontFace": "FuraMono Nerd Font",
 
@@ -122,3 +128,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
+****** actualizar Linux: 
+
+sudo apt update && sudo apt upgrate -y
